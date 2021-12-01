@@ -2,10 +2,10 @@
 Colors used:
 
 Button//
-Primary color :rgba(0, 0, 0, 1) black
-Secondary color :rgba(198, 198, 198, 1) lightgrey
-Hover : rgba(198, 198, 198, 1) lightgrey
-visited : rgba(140, 140, 140, 1)
+Primary color :#000000 black
+Secondary color :#C6C6C6 lightgrey
+Hover : #C6C6C6
+visited : #8C8C8C
 
 About page //
 Text >
@@ -15,7 +15,7 @@ CTA :#C6C6C6;
 
 Styling :
 Header frame BG: beige #3B3734
-BG: gradiant rgba(48, 42, 39, 1) & rgba(0, 0, 0, 1);
+BG: gradiant #302A27 & #000000;
 
 Index page //
 
@@ -41,20 +41,8 @@ Button : blue #1169EE;
 
 Userflow container  Text : green #1E6E35 ; red #F76943; Blue #1169EE
 */
-header {
-  background-color: #ffffff;
-  font-family: 'Outfit', sans-serif;
-  font-size: 16px;
-  /* Sets the font size From 16px to 36px */
-  font-weight: 400;
-  /* Sets the font weight to 300 */
-  line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
-  color: black;
-}
-
 body {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   font-family: 'Outfit', sans-serif;
   font-size: 16px;
   /* Sets the font size From 16px to 36px */
@@ -62,98 +50,93 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: rgba(198, 198, 198, 1);
+  color: #C6C6C6;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
-
 h1 {
-  background-color: white;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   font-size: 2.25em;
   /*  36px */
   font-weight: 700;
 }
-
 h2 {
-  background-color: white;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   font-size: 1.125em;
   /*  24px */
   font-weight: 700;
 }
-
 h3 {
-  background-color: white;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   font-size: 1.125em;
   /*  24px */
   font-weight: 700;
 }
-
 h4 {
   font-size: 1em;
   /*  16px */
   font-weight: 600;
 }
-
-code {
-  background-color: white;
-  color: rgba(0, 0, 0, 1);
-  font-size: 1em;
-  /*  16px */
-  font-weight: 700;
-}
-
 img {
   width: 100%;
 }
 
 a {
-  background-color: rgba(255, 255, 255, 1);
-  color: rgba(198, 198, 198, 1);
+  color: #000000;
   text-decoration: none;
   /* No underlining */
 }
-
+/*#033D7C */
 a:hover {
-  background-color: rgba(255, 255, 255, 1);
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
+a:visited {
+  /* visited link */
+  color: #8C8C8C;
+}
+a:active {
+  /* selected link */
+  color: #1169EE;
+  text-decoration: underline;
+}
 
 a:focus {
-  background-color: rgba(255, 255, 255, 1);
-  color: rgba(17, 105, 238, 1);
+  color: #00DDD0;
   text-decoration: underline;
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: rgba(0, 0, 0, 1);
-  color: #ffffff; /* needed to override the default link color */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #000000;
+  color: #FFFFFF;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 10px;
-  border-bottom: 0px solid rgba(255, 255, 255, 1); /* width of the border, type, color */
+  border-bottom: 0px solid #FFFFFF;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.6; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
 .button.contact {
   background-color: transparent;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   font-weight: 400;
-  border: 2px solid rgba(0, 0, 0, 1);
+  border: 2px solid #000000;
 }
+
 .button.contact:hover {
-  background-color: rgba(0, 0, 0, 1);
-  color: #ffffff;
+  background-color: #000000;
+  color: #FFFFFF;
 }
