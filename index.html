@@ -13,7 +13,7 @@
 
   <style>
     body {
-      background-color: rgba(255, 255, 255, 1);
+      background-color: #FFFFFF;
     }
   </style>
 
@@ -24,15 +24,13 @@
 
 <body>
   <header>
-
     <div>
-      <a href="index.html"><code>Yoann Pisterman</code></a>
-      <nav>
+      <a href="index.html">Yoann Pisterman</a>
+      <nav class="navigation_bar">
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
-
         </ul>
       </nav>
     </div>
@@ -41,7 +39,7 @@
   <main>
     <div>
       <div>
-        <h1>Hi, I’m Yoann Pisterman based in Berlin. <span> Digital designer & analog artist.</span></h1>
+        <h1>Hi, I’m Yoann Pisterman based in Berlin. <span>Digital designer & analog artist.</span></h1>
         <p>As designer I’m focusing on User interface design, Brand & identity design.</p>
         <p>I have a visual, human centric design and problem solving approach.</p>
         <p>I seek for a balance between clean and meaningful outcome.</p>
@@ -50,31 +48,32 @@
 
     <div>
       <div>
-        <h2>Work</h2>
+        <div id="work">
+          <h2>Work</h2>
+        </div>
 
-        <div>
+        <div class="row">
           <div>
-            <picture>
+            <picture class="cover_summit">
               <source srcset="img/summit/summitcover@1.jpg" media="(max-width:767px)">
               <img src="img/summit/summitcover@1.jpg" alt="Summit money saving app">
             </picture>
           </div>
 
           <div>
-            <h3><a href="summit.html">Money saving app</a></h3>
-            <h4>Case Study</h4>
-            <p>
+            <div class="app_title_link">
+              <h3><a href="summit.html">Money saving app</a></h3>
+              <a href="summit.html" class="go_to"><img src="svg/arrowright.svg" alt="Read more"> </a>
+            </div>
+            <p class="project_descrition">
               Creating a brand identity & money saving mobile app for non-tech expert.
             </p>
-            <a href="summit.html" class="button">Read more</a>
-            <!-- use arrow instead of read more / resize the sign -->
           </div>
         </div>
 
-        <div>
+        <div class="row">
           <!-- open row that holds (2) columns for project -->
           <div>
-            <!-- open first column (used for image) -->
             <picture>
               <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
               <img src="http://via.placeholder.com/1200x800" alt="My Image">
@@ -83,41 +82,46 @@
 
           <div>
             <!-- open second column (used for text) -->
-            <h3><a href="#">Note taking app</a> </h3><!-- heading for the project -->
-            <h4>Case Study</h4>
-            <p>
-              <!-- open paragraph -->
+            <div class="app_title_link">
+              <h3><a href="#">Note taking app</a> </h3><!-- heading for the project -->
+              <a href="#" class="go_to"><img src="svg/arrowright.svg" alt="Read more"> </a><!-- button or link label -->
+            </div>
+            <p class="project_descrition">
               Based on design functionalism concept:<span>“Less is more”</span>
-            </p><!-- end paragraph -->
-            <a href="#" class="button">Read more</a><!-- button or link label -->
+            </p>
           </div><!-- end second column -->
+
         </div><!-- end row that holds (2) columns for project -->
       </div>
     </div>
   </main>
 
-  <footer id="contact">
-    <div class="container">
-      <h2>Get in touch</h2>
+  <footer class="contact">
+    <div class="contact_container">
+      <div class="get_in_touch">
+        <h2>Get in touch</h2>
+      </div>
       <p>
-        <a href="mailto:info.pisterman@gmail.com" class="button contact">Send me an email</a>
+        <a href="mailto:info.pisterman@gmail.com" class="button_contact">Send me an email</a>
       </p>
 
-      <div>
+      <div class="social_icons">
         <!--Social Media Layout and Placeholders-->
         <ul>
           <li>
-            <a href="LINKEDIN-URL" class="a">LinkedIn</a>
-            <img src="svg/linkedinicon.svg" alt="linkedinicon">
+            <a href="LINKEDIN-URL" class="linkedin_icon">
+              <img src="svg/linkedinicon.svg" alt="linkedin icon"></a>
           </li>
           <li>
-            <a href="https://www.behance.net/yoannpisterman" class="a">Behance</a>
-            <img src="svg/behanceicon.svg" alt="behanceicon">
+            <a href="https://www.behance.net/yoannpisterman" class="behance_icon">
+              <img src="svg/behanceicon.svg" alt="behanceicon">
+            </a>
           </li>
         </ul>
+
       </div>
 
-      <div>
+      <div class="copyright">
         <p>©Yoann Pisterman designs 2021</p>
       </div>
     </div>

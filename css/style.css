@@ -41,6 +41,10 @@ Button : blue #1169EE;
 
 Userflow container  Text : green #1E6E35 ; red #F76943; Blue #1169EE
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #FFFFFF;
   font-family: 'Outfit', sans-serif;
@@ -56,87 +60,223 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
-  color: #000000;
-  font-size: 2.25em;
+  color: #8C8C8C;
+  font-size: 1.5em;
   /*  36px */
   font-weight: 700;
 }
+
 h2 {
-  color: #000000;
+  color: #8C8C8C;
   font-size: 1.125em;
   /*  24px */
   font-weight: 700;
 }
+
 h3 {
-  color: #000000;
+  color: #8C8C8C;
   font-size: 1.125em;
   /*  24px */
   font-weight: 700;
 }
+
 h4 {
+  color: #8C8C8C;
   font-size: 1em;
   /*  16px */
   font-weight: 600;
 }
+
 img {
   width: 100%;
 }
 
 a {
   color: #000000;
-  text-decoration: none;
-  /* No underlining */
-}
-/*#033D7C */
-a:hover {
-  color: #000000;
-  text-decoration: underline;
-  /* Underlining when hovering over a link */
-}
-a:visited {
-  /* visited link */
-  color: #8C8C8C;
-}
-a:active {
-  /* selected link */
-  color: #1169EE;
-  text-decoration: underline;
+  /* underlining */
 }
 
-a:focus {
-  color: #00DDD0;
-  text-decoration: underline;
+/*#033D7C */
+a:visited {
+  /* visited link */
+  color: #000000;
+}
+
+a:hover, a:focus {
+  color: #1169EE;
+  /* Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link clic the link  darker color*/
+  color: #2D69C2;
 }
 
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #000000;
-  color: #FFFFFF;
-  /* needed to override the default link color */
+  color: #FFFFFF !important;
+  /* color stays white // needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 10px;
   border-bottom: 0px solid #FFFFFF;
   /* width of the border, type, color */
   transition: 0.2s opacity;
+  text-decoration: none;
 }
 
 .button:hover {
-  opacity: 0.8;
+  opacity: 0.6;
   /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #000000;
+  color: #000000 !important;
   font-weight: 400;
   border: 2px solid #000000;
 }
 
 .button.contact:hover {
-  background-color: #000000;
+  background-color: #C6C6C6;
   color: #FFFFFF;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+/* Layout styling */
+header {
+  background-color: #F5F5F5;
+  text-align: center;
+  border-bottom: 1px solid #C6C6C6;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 15px 0px rgba(50, 50, 55, 0.18);
+  -moz-box-shadow: 0px 2px 15px 0px rgba(50, 50, 55, 0.18);
+  box-shadow: 0px 2px 15px 0px rgba(50, 50, 55, 0.18);
+  position: fixed;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
+}
+
+nav li:hover {
+  border-bottom: 3px solid #000000;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0;
+}
+
+nav a:visited {
+  /* visited link */
+  color: #000000;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+nav a:active {
+  /* selected link clic the link  darker color*/
+  color: #1169EE;
+}
+
+main {
+  background-color: #ffffff;
+  text-align: left;
+  padding: 0 10px;
+  padding-top: 133px;
+}
+
+#work {
+  text-align: center;
+  padding-bottom: 4px;
+  border-top: 1px solid #C6C6C6;
+  border-bottom: 1px solid #C6C6C6;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+  padding-bottom: 12px;
+  border-bottom: 1px solid #C6C6C6;
+}
+
+.app_title_link {
+  display: flex;
+  column-gap: 0.5em;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.go_to {
+  display: inline-flex;
+  padding-top: 0.5em;
+  height: 2.5em;
+  margin: 0 15px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
+}
+
+.project_descrition {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.get_in_touch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_icons {
+  width: 30%;
+  display: flex;
+}
+
+.social_icons ul {
+  list-style-type: none;
+}
+
+.social_icons li:hover {
+  border-bottom: 3px solid #000000;
+}
+
+.copyright {
+  display: inline-block;
+  float: right;
+  padding-right: 1em;
+}
+
+.button_back {
+  padding-top: 0.5em;
+  height: 2em;
+  display: inline-flex;
+  margin: 0 15px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
 }
