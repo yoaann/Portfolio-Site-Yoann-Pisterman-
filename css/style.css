@@ -163,7 +163,6 @@ header {
   position: fixed;
 }
 
-
 nav ul {
   list-style-type: none;
   padding-left: 0;
@@ -202,8 +201,7 @@ nav a:active {
 main {
   background-color: #ffffff;
   text-align: left;
-  padding: 0 10px;
-  padding-top: 133px;
+  padding-top: 90px;
 }
 
 #work {
@@ -225,6 +223,8 @@ main {
   column-gap: 0.5em;
   align-items: center;
   align-content: flex-start;
+  max-width: 1200px;
+  padding: 0 15px;
 }
 
 .go_to {
@@ -239,6 +239,8 @@ main {
 .project_descrition {
   display: inline-block;
   margin-top: 1em;
+  max-width: 1200px;
+  padding: 0 15px;
 }
 
 .get_in_touch {
@@ -266,10 +268,8 @@ main {
   border-bottom: 3px solid #000000;
 }
 
-.copyright {
-  display: inline-block;
-  float: right;
-  padding-right: 1em;
+.copyright p {
+text-align: right;
 }
 
 .button_back {
