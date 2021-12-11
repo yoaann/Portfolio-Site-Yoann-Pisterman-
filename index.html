@@ -11,21 +11,16 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <style>
-    body {
-      background-color: #FFFFFF;
-    }
-  </style>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
   <header>
-    <div>
-        <a href="index.html">Yoann Pisterman</a>
+    <div class="container">
+        <a href="index.html" class="logo">Yoann Pisterman</a>
       <nav class="navigation_bar">
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -46,21 +41,19 @@
       </div>
     </div>
 
-    <div>
-      <div>
-        <div id="work">
+    <div class="section" id="work">
+      <div class="container">
           <h2>Work</h2>
-        </div>
-
+</div>
         <div class="row">
-          <div>
+          <div class="columns">
             <picture class="cover_summit">
               <source srcset="img/summit/summitcover@1.jpg" media="(max-width:767px)">
               <img src="img/summit/summitcover@1.jpg" alt="Summit money saving app">
             </picture>
           </div>
 
-          <div>
+          <div class="columns">
             <div class="app_title_link">
               <h3><a href="summit.html">Money saving app</a></h3>
               <a href="summit.html" class="go_to"><img src="svg/arrowright.svg" alt="Read more"> </a>
@@ -73,14 +66,14 @@
 
         <div class="row">
           <!-- open row that holds (2) columns for project -->
-          <div>
+          <div class="columns">
             <picture class="cover_note">
               <source srcset="img/note/notecoverimg1x.jpg" media="(max-width:767px)">
               <img src="img/note/notecoverimg1x.jpg" alt="Note Note taking app">
             </picture>
           </div><!-- end first column -->
 
-          <div>
+          <div class="columns">
             <!-- open second column (used for text) -->
             <div class="app_title_link">
               <h3><a href="#">Note taking app</a> </h3><!-- heading for the project -->
@@ -90,13 +83,12 @@
               Based on design functionalism concept:<span>“Less is more”</span>
             </p>
           </div><!-- end second column -->
-
         </div><!-- end row that holds (2) columns for project -->
+
       </div>
-    </div>
   </main>
 
-  <footer class="contact">
+  <footer id="contact">
     <div class="container">
       <div class="get_in_touch">
         <h2>Get in touch</h2>

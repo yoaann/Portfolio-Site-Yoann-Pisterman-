@@ -10,22 +10,18 @@
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <style>
-    body {
-      background-color: rgba(255, 255, 255, 1);
-    }
-  </style>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
   <header>
     <div>
-      <a href="index.html">Yoann Pisterman</a>
+      <a href="index.html" class="logo">Yoann Pisterman</a>
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -67,10 +63,10 @@
           <div class="column">
             <!-- column left  open -->
             <p>This app is a tool that helps to balance your saving goals by priorities can help managing your finance at a glance.</p>
-            <a href="files/summitcasestudy.png" class="button_case">Casestudylink</a>
+            <a href="files/summitcasestudy.png" class="button button_case">Casestudylink</a>
           </div>
           <!-- column left close -->
-          <div class="column">
+          <div class="column ">
             <!-- column right open -->
             <p>Summit is a financial mobile app and web app design that helps people to save money quickly for a particular reason.</p>
             <div class="row">
@@ -103,21 +99,24 @@
       </div> <!-- container close-->
     </div><!-- section close -->
 
-    <div class="section">
+    <div class="section summit_bg">
       <!-- mockup1 section open BG -->
-      <img src="img/summit/BGmockup@1.jpg" alt="BGsummit">
-      <div class="container">
-        <h2>Summit <span>Anyone can save money</span></h2>
+      <div class="container summit_mockup">
+        <!--<h2>Summit <span>Anyone can save money</span></h2>-->
+        <img src="svg/summitsvg/fontlogo1@.svg" class=summit_font_logo alt="Summit font logo">
+        <img src="img/summit/imgmockup@1.png" class=summit__mockup_2 alt="Summit mockup">
+      </div>
+    </div>
 
-        <img src="img/summit/imgmockup@1.jpg" alt="Summit mockup">
-
-        <div class="row_blu">
+    <div class="section blue">
+      <!-- mockup1 section open BG -->
+      <div class="container ">
+        <div class="row">
           <div class="column">
             <!-- columns left open -->
             <div>
               <!-- img & icon side by side  -->
-              <img src="svg/summitsvg/goalicon.svg" alt="goalicon">
-              <h3>Saving time</h3>
+              <h3><img src="svg/summitsvg/goalicon.svg" class="summit_icon" alt="goalicon"><span>Saving time</span></h3>
             </div>
             <p>make your experience quick and smooth, especially if your are not a tech person.
             </p>
@@ -128,8 +127,7 @@
             <!-- columns left open -->
             <div>
               <!-- img & icon side by side  -->
-              <img src="svg/summitsvg/insighticon.svg" alt="insighticon">
-              <h3>Convenience</h3>
+              <h3><img src="svg/summitsvg/insighticon.svg" class="summit_icon" alt="insighticon"><span>Convenience</span></h3>
             </div>
             <p>provides an intuitive journey that keeps track of your expenses and incomes.
             </p>
@@ -140,8 +138,7 @@
             <!-- columns left open -->
             <div>
               <!-- img & icon side by side  -->
-              <img src="svg/summitsvg/shieldicon.svg" alt="shieldicon">
-              <h3>Safety</h3>
+              <h3><img src="svg/summitsvg/shieldicon.svg" class="summit_icon" alt="shieldicon"><span>Safety</span></h3>
             </div>
             <p>includes secure login processs and data protection system.
             </p>
@@ -160,26 +157,29 @@
         <p>First, stepping into the deliverable tasks was to define a Brand identity that would represent :
         </p>
         <div class="row">
-          <div class="column">
-            <!--img summit graph -->
-            <img src="img/summit/summitbrandgraph@1.jpg" alt="summitbrandgraph">
-          </div>
-          <div class="column">
+          <div class="column symbol">
             <!--img brand symbol -->
-            <img src="img/summit/summitbrandsymbol@1.jpg" alt="summitbrandsymbol">
+            <img src="img/summit/summitbrandsymbol_1@1.png" alt="summitbrandgraph">
+          </div>
+          <div class="column symbol">
+            <img src="img/summit/summitbrandsymbol_2@1.png" alt="summitbrandgraph">
+          </div>
+          <div class="column symbol">
+            <img src="img/summit/summitbrandsymbol_3@1.png" alt="summitbrandgraph">
+          </div>
+          <div class="column graph">
+            <!--img summit graph -->
+            <img src="img/summit/summitbrandgraph@1.png" alt="summitbrandgraph">
           </div>
         </div><!-- row text close -->
       </div><!-- container close -->
     </div> <!-- img mockup 1 section close-->
 
-    <div class="section">
-      <img src="img/summit/summitbrandingBG@1.jpg" alt="summitbrandingBG">
+    <div class="section summit_bg_2">
       <!-- img BG -->
-      <div class="container">
-        <!-- img logo png -->
-        <img src="img/summit/summitlogo@1.jpg" alt="summitlogo">
-        <img src="svg/summitsvg/summitfont1.svg" alt="summitfont1">
-        <!--  Font svg img -->
+      <!-- img logo png -->
+      <div class="container summit_logo">
+        <img src="img/summit/summit_logo@1.png" class="summit_logo" alt="summit logo">
       </div>
     </div>
 
@@ -190,13 +190,13 @@
         <p>Defining the right process rhythm through the user flow. </p>
         <p>A smooth user flow process that links the user bank account and creates a first saving goal, without any frustration or discouraging feelings</p>
         <div class="row">
-          <div class="column">
+          <div class="column user_flow">
             <!--  1rst user flow png without BG -->
-            <img src="img/summit/summituserflow1.@1.jpg" alt="summituserflow1">
+            <img src="img/summit/summituserflow1.@1.png" class="user_flow" alt="summituserflow1">
           </div>
           <div class="column">
             <!--  2rst user flow png without BG -->
-            <img src="img/summit/summituserflow2@1.jpg" alt="summituserflow2">
+            <img src="img/summit/summituserflow2@1.png" class="user_flow" alt="summituserflow2">
           </div>
         </div>
 
@@ -228,8 +228,7 @@
 
     <div class="section">
       <div class="container">
-        <h2>Screens</h2>
-        <h3>Create a goal</h3>
+        <h2>Create a goal screens</h2>
 
         <p>There is a lot of reasons why to save money.
           There is list of common goals, but the user has also the possibility to search for more suited choices.
@@ -250,7 +249,7 @@
         </p>
         <p>In order to deliver a tailored goal saving strategy plan, this extra feature helps and encourages the user through the saving money process.</p>
 
-        <img src="img/summit/summitmockup2@1.jpg" alt="goal screen">
+        <img src="img/summit/summitmockup2@1.jpg" class="screen_mockup" alt="goal screen">
 
       </div>
     </div>
@@ -264,10 +263,10 @@
     </div>
 
 
-    <div class="section">
+    <div class="section darkblue">
       <!-- mockup 5 -->
-      <div class="container">
-        <img src="img/summit/summitmockup5@1.jpg" alt="summit mockup 1">
+      <div class="container summit_mockup_5">
+        <img src="img/summit/summitmockup5.img@1.png" alt="summit mockup 1">
       </div>
     </div>
 

@@ -163,8 +163,17 @@ header {
   position: fixed;
 }
 
-header div a {
+header a {
   text-decoration: none;
+}
+
+.logo {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 2em;
+}
+
+a.logo:hover {
+  color: #000000;
 }
 
 nav ul {
@@ -206,6 +215,15 @@ main {
   padding-top: 90px;
 }
 
+.section {
+  padding: 12px 0;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 12px;
+}
+
 #work {
   text-align: center;
   padding-bottom: 4px;
@@ -213,7 +231,7 @@ main {
   border-bottom: 1px solid #C6C6C6;
 }
 
-.row {
+#work .row {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
   padding-bottom: 12px;
@@ -245,14 +263,13 @@ main {
   padding: 0 15px;
 }
 
-.button_case {
+.button.button_case {
   background-color: transparent;
-  color: #1169EE;
-  font-weight: 400;
+  color: #1169EE !important;
   border: 2px solid #1169EE;
-  text-decoration: none;
   padding: 4px 12px;
   border-radius: 3px;
+  margin: 1em 5em;
 }
 
 .button_case:hover {
@@ -300,21 +317,87 @@ main {
   text-align: center;
 }
 
-.BG_1_summit {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-  }
+/* summit page*/
+.summit_bg {
+  background-image: url("../img/summit/BGmockup@1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
 
-  .container_1 {
-  position: absolute;
-  left: 40px;
-  top: 10px;
-  z-index: -1;
-  }
+.summit_font_logo {
+  display: flex;
+  width: 40%;
+  margin: 0em 12em;
+  padding: 0 15px;
+}
+.blue {
+  background-color: #19528B;
+  padding: 25px 0;
+  margin-top: -1px;
+}
 
-  .row_blu {
-    height: 200px;
-    background-image: linear-gradient(#19528B, #318AD6);
-  }
+.blue h3 {
+  color: #FFFFFF;
+}
+
+.blue p {
+  color: #FFFFFF;
+}
+
+.summit_icon {
+  width: 2em !important;
+  margin: 0 12px;
+  justify-content: center;
+}
+
+.row .column {
+  display: inline-grid;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.row .graph {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.row .symbol {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.summit_bg_2 {
+  background-image: url("../img/summit/summitbrandingBG@1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.summit_logo {
+  display: inline;
+  margin: 0 2em;
+  margin-top: 12px;
+  width: 50%
+}
+
+.row .user_flow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 12px 0;
+}
+
+.screen_mockup{
+  margin: 12px 0;
+}
+
+.darkblue {
+background-color: #1261D8;
+padding: 25px 0;
+background-position: center;
+}
