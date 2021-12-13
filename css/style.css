@@ -219,16 +219,15 @@ main {
   padding: 12px 0;
 }
 
-.column {
-  flex: 33.33%;
-  padding: 12px;
+.flex {
+display: flex;
+justify-content: space-between;
 }
 
 #work {
   text-align: center;
   padding-bottom: 4px;
   border-top: 1px solid #C6C6C6;
-  border-bottom: 1px solid #C6C6C6;
 }
 
 #work .row {
@@ -289,11 +288,11 @@ main {
   align-items: center;
 }
 
-.social_icons {
+.social_icons{
   width: 30%;
   display: flex;
-  justify-content: center;
-  margin: 0 15px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .social_icons ul {
@@ -313,8 +312,9 @@ main {
   height: 2.5em;
 }
 
-.get_in_touch {
+#get_in_touch {
   text-align: center;
+  border-bottom: 1px solid #C6C6C6;
 }
 
 /* summit page*/
@@ -349,12 +349,6 @@ main {
   width: 2em !important;
   margin: 0 12px;
   justify-content: center;
-}
-
-.row .column {
-  display: inline-grid;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .row .graph {
