@@ -48,7 +48,7 @@ Userflow container  Text : green #1E6E35 ; red #F76943; Blue #1169EE
 body {
   background-color: #FFFFFF;
   font-family: 'Outfit', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   /* Sets the font size From 16px to 36px */
   font-weight: 400;
   /* Sets the font weight to 300 */
@@ -66,6 +66,7 @@ h1 {
   font-size: 1.5em;
   /*  36px */
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
@@ -211,6 +212,18 @@ nav a:active {
   color: #1169EE;
 }
 
+.intro span {
+  display: block;
+}
+.intro p {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.intro {
+text-align: center;
+}
+
 main {
   padding-top: 90px;
 }
@@ -220,8 +233,8 @@ main {
 }
 
 .flex {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #work {
@@ -237,7 +250,7 @@ justify-content: space-between;
   border-bottom: 1px solid #C6C6C6;
 }
 
-.app_title_link {
+.arrow_link {
   display: flex;
   column-gap: 0.5em;
   align-items: center;
@@ -288,15 +301,19 @@ justify-content: space-between;
   align-items: center;
 }
 
-.social_icons{
-  width: 30%;
+.social_icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .social_icons ul {
   list-style-type: none;
+  padding-left: 0;
+}
+.social_icons ul li{
+margin: 0 1em; 
 }
 
 .social_icons li:hover {
@@ -331,6 +348,7 @@ justify-content: space-between;
   margin: 0em 12em;
   padding: 0 15px;
 }
+
 .blue {
   background-color: #19528B;
   padding: 25px 0;
@@ -372,11 +390,9 @@ justify-content: space-between;
   background-position: center;
 }
 
-.summit_logo {
-  display: inline;
-  margin: 0 2em;
-  margin-top: 12px;
-  width: 50%
+.summit_bg_2 .summit_logo {
+  width: 50%;
+  margin: auto;
 }
 
 .row .user_flow {
@@ -386,12 +402,72 @@ justify-content: space-between;
   margin: 12px 0;
 }
 
-.screen_mockup{
+.screen_mockup {
   margin: 12px 0;
 }
 
 .darkblue {
-background-color: #1261D8;
-padding: 25px 0;
-background-position: center;
+  background-color: #1261D8;
+  padding: 25px 0;
+  background-position: center;
 }
+
+.portrait {
+  width: 15em;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-md-4{
+  width: 30%;
+}
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+.col-md-4{
+  width: 30%;
+}
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
