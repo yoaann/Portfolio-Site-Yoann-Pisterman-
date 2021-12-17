@@ -148,8 +148,9 @@ a:active {
 }
 
 .container {
+  margin: 0 2em;
+  padding-bottom: 1em;
   max-width: 1200px;
-
 }
 
 /* Layout styling */
@@ -215,13 +216,14 @@ nav a:active {
 .intro span {
   display: block;
 }
+
 .intro p {
   max-width: 504px;
   margin: 0 auto;
 }
 
 .intro {
-text-align: center;
+  text-align: center;
 }
 
 main {
@@ -313,8 +315,9 @@ main {
   list-style-type: none;
   padding-left: 0;
 }
-.social_icons ul li{
-margin: 0 1em;
+
+.social_icons ul li {
+  margin: 0 1em;
 }
 
 .role {
@@ -326,7 +329,6 @@ margin: 0 1em;
   list-style-type: none;
   padding-left: 0;
 }
-
 
 .social_icons li:hover {
   border-bottom: 3px solid #000000;
@@ -348,12 +350,10 @@ margin: 0 1em;
 }
 
 /* summit page*/
-
 /* .header {
   margin: 0 4em;
   padding-bottom: 1em;
 }*/
-
 .summit_bg {
   background-image: url("../img/summit/BGmockup@1.jpg");
   background-repeat: no-repeat;
@@ -371,7 +371,7 @@ margin: 0 1em;
 .blue {
   background-color: #19528B;
   padding: 25px 0;
-  margin-top: -1px;
+  margin-top: -2px;
 }
 
 .blue h3 {
@@ -383,28 +383,25 @@ margin: 0 1em;
 }
 
 .summit_icon {
-  width: 2em !important;
   justify-content: center;
+  align-items: center;
+  width: 2em !important;
+  margin: 0 12px;
 }
 
-.objective .flex{
-  max-width: 200px;
+.objective {
+margin: 0 12px;
 }
 
-.row .graph {
+.graph {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
 }
 
-.row .symbol {
-  width: 205px;
-  margin: 19px;
-}
-
-.symbol{
-  width: auto;
+.symbol {
+  width: 19em;
 }
 
 .summit_bg_2 {
@@ -436,21 +433,16 @@ margin: 0 1em;
 }
 
 /* about page*/
-
 .about h1 {
   width: 100%;
   margin: 1em auto;
 }
-.portrait{
-width: 80%;
-margin: 3em auto;
+
+.portrait {
+  width: 80%;
+  margin: 3em auto;
 }
 
-.container {
-  margin: 0 2em;
-  padding-bottom: 1em;
-  max-width: 585px;
-}
 /*.paragraph{
   margin: 0 2em;
   padding-bottom: 1em;
@@ -461,25 +453,28 @@ margin: 3em auto;
   margin: 3em 7em;
 }
 
-#skill{
+#skill {
   text-align: center;
   padding-bottom: 4px;
 }
+
 #skill .row {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
   padding-bottom: 12px;
   border-bottom: 1px solid #C6C6C6;
 }
-.skill ul{
+
+.skill ul {
   list-style: none;
   padding-left: 0
 }
-.tool h3{
-margin: 1em 8em;
 
+.tool h3 {
+  margin: 1em 8em;
 }
-.tool ul{
+
+.tool ul {
   list-style: none;
   margin: 0 9em;
 }
@@ -499,15 +494,16 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-.col-md-4{
-  width: 30%;
-}
+  .col-md-4 {
+    width: 30%;
+  }
+
   .col-md-6 {
     width: 50%;
   }
@@ -517,13 +513,13 @@ Medium devices (640px and larger)
   }
 }
 
-
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-.col-7 {width: 58.33%;}
-
+  .col-7 {
+    width: 58.33%;
+  }
 }
 
 /* ==============================
@@ -531,11 +527,8 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
 
-
-
 .copyright {
   width: 100%;
   background-color: #F5F5F5;
   border-top: 1px solid #C6C6C6;
-
 }
