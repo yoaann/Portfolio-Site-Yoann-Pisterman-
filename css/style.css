@@ -149,16 +149,12 @@ a:active {
 }
 
 .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
 }
 
 .column_paragraph {
   padding: 0 12px;
 }
-
-
 
 /* Layout styling */
 header {
@@ -256,16 +252,24 @@ main {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
   padding-bottom: 12px;
-  border-bottom: 1px solid #DADADA;
+  /*border-bottom: 1px solid #DADADA;*/
 }
 
+/*#work .row :last-child {
+  padding-bottom: 0;
+  border-top: none;
+}*/
 .arrow_link {
   display: flex;
-  column-gap: 0.5em;
+  /*column-gap: 0.5em;*/
   align-items: center;
   align-content: flex-start;
   max-width: 1200px;
   padding: 0 2.125em;
+}
+
+.arrow_link a {
+  text-decoration: none;
 }
 
 .go_to {
@@ -277,10 +281,35 @@ main {
   border-bottom: 3px solid transparent;
 }
 
-.project_description {
+.animation {
+  display: flex;
+  /* column-gap: 0.5em; */
+  align-items: center;
+  align-content: flex-start;
+  max-width: 1200px;
+  padding: 0 2.125em;
+  color: #000000
+}
+
+.project_summit {
   padding-left: 3em;
   text-align: left;
   max-width: 342px;
+  color: #000000;
+}
+
+.project_note {
+  padding-left: 3em;
+  text-align: left;
+  max-width: 342px;
+  color: #000000;
+}
+
+.project_animation {
+  padding-left: 3em;
+  text-align: left;
+  max-width: 342px;
+  color: #000000;
 }
 
 .button.button_case {
@@ -297,12 +326,6 @@ main {
 .button_case:hover {
   background-color: #F5F5F5;
   color: #0F4495;
-}
-
-.get_in_touch {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .button_contact {
@@ -341,19 +364,9 @@ main {
   border-bottom: 3px solid #000000;
 }
 
-.copyright p {
-  text-align: center;
-}
-
 .button_back {
   display: inline-flex;
   height: 2.5em;
-}
-
-#get_in_touch {
-  text-align: center;
-  border-top: 1px solid #DADADA;
-  border-bottom: 1px solid #DADADA;
 }
 
 p {
@@ -362,6 +375,15 @@ p {
 
 .header {
   padding: 0 12px;
+}
+
+/* about page*/
+.summit {
+  background-color: #C0D8F0;
+}
+
+.note_bg {
+  background-color: #ECECF0;
 }
 
 /* summit page*/
@@ -445,21 +467,17 @@ p {
   margin: 1em auto;
 }
 
-.portrait {
-  width: 80%;
-  margin: 3em auto;
+.resume {
+  padding: 1em 0;
+  text-align: center;
 }
 
-.resume .button {
-  margin: 3em 7em;
-}
-
-#skill {
+.skill {
   text-align: center;
   padding-bottom: 4px;
 }
 
-#skill .row {
+.skill .row {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
   padding-bottom: 12px;
@@ -480,10 +498,73 @@ p {
   margin: 0 9em;
 }
 
-.copyright {
-  width: 100%;
+.skills-tools {
+  flex-direction: column;
+}
+
+footer {
   background-color: #F5F5F5;
-  border-top: 1px solid #C6C6C6;
+  text-align: center;
+  border-top: 1px solid #DADADA;
+}
+
+footer .container {
+  padding-top: 1em;
+  padding-bottom: 1em
+}
+
+.copyright p {
+  text-align: center;
+  margin: 0;
+  padding: 1em 0;
+}
+
+.col-sm-1 {
+  width: 8.33%;
+}
+
+.col-sm-2 {
+  width: 16.66%;
+}
+
+.col-sm-3 {
+  width: 25%;
+}
+
+.col-sm-4 {
+  width: 33.33%;
+}
+
+.col-sm-5 {
+  width: 41.66%;
+}
+
+.col-sm-6 {
+  width: 50%;
+}
+
+.col-sm-7 {
+  width: 58.33%;
+}
+
+.col-sm-8 {
+  width: 66.66%;
+}
+
+.col-sm-9 {
+  width: 75%;
+}
+
+.col-sm-10 {
+  width: 83.33%;
+}
+
+.col-1sm-1 {
+  width: 91.66%;
+}
+
+.col-sm-12 {
+  width: 100%;
 }
 
 /* ==============================
@@ -507,20 +588,76 @@ Medium devices (640px and larger)
     display: table;
   }
 
-  .col-md-4 {
-    width: 30%;
+  .col-m-1 {
+    width: 8.33%;
   }
 
-  .col-md-6 {
+  .col-m-2 {
+    width: 16.66%;
+  }
+
+  .col-m-3 {
+    width: 25%;
+  }
+
+  .col-m-4 {
+    width: 33.33%;
+  }
+
+  .col-m-5 {
+    width: 41.66%;
+  }
+
+  .col-m-6 {
     width: 50%;
+  }
+
+  .col-m-7 {
+    width: 58.33%;
+  }
+
+  .col-m-8 {
+    width: 66.66%;
+  }
+
+  .col-m-9 {
+    width: 75%;
+  }
+
+  .col-m-10 {
+    width: 83.33%;
+  }
+
+  .col-m-11 {
+    width: 91.66%;
+  }
+
+  .col-m-12 {
+    width: 100%;
   }
 
   [class*="col-"] {
     float: left;
   }
 
-  .row {
-    flex-direction: column;
+  .skills-tools {
+    flex-direction: row;
+  }
+
+  .portrait img {
+    max-width: 400px;
+    padding-top: 4em;
+  }
+
+  .portrait {
+    text-align: center;
+    display: block;
+  }
+
+  .resume {
+    padding-top: 1em;
+    text-align: center;
+    padding-top: 2em
   }
 }
 
@@ -551,6 +688,12 @@ Large devices (1024px or larger)
 
   [class*="col-"] {
     float: left;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -585,19 +728,18 @@ X-large devices (1440px or larger)
 }
 
 .illustration {
-  width: 100%;
   max-width: 100%;
-  height: auto;
-}
-
-#work .illustration {
-  border: none !important;
 }
 
 /*animation*/
 @keyframes color-change {
-  from {fill: #EDC655;}
-  to {fill: #F76414;}
+  from {
+    fill: #EDC655;
+  }
+
+  to {
+    fill: #F76414;
+  }
 }
 
 .sun {
@@ -609,8 +751,13 @@ X-large devices (1440px or larger)
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -622,9 +769,15 @@ X-large devices (1440px or larger)
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
