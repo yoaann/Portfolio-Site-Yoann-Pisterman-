@@ -61,7 +61,7 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 
-h1 {
+h1, .h1 {
   color: #8C8C8C;
   font-size: 1.5em;
   /*  36px */
@@ -323,6 +323,10 @@ main {
   margin-bottom: 1.5em
 }
 
+.center {
+  text-align: center;
+}
+
 .button_case:hover {
   background-color: #F5F5F5;
   color: #0F4495;
@@ -353,6 +357,7 @@ main {
 .role {
   display: flex;
   justify-content: space-around;
+  text-align: center;
 }
 
 .role ul {
@@ -442,13 +447,17 @@ p {
 
 .summit_bg_2 .summit_logo {
   width: 50%;
-  margin: auto;
+  margin: 60px auto -220px;
 }
 
 .user_flow {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.overlap {
+  margin-top: 180px;
 }
 
 .screen_mockup {
@@ -682,8 +691,52 @@ Large devices (1024px or larger)
     display: table;
   }
 
-  .col-7 {
+  .col-l-1 {
+    width: 8.33%;
+  }
+
+  .col-l-2 {
+    width: 16.66%;
+  }
+
+  .col-l-3 {
+    width: 25%;
+  }
+
+  .col-l-4 {
+    width: 33.33%;
+  }
+
+  .col-l-5 {
+    width: 41.66%;
+  }
+
+  .col-l-6 {
+    width: 50%;
+  }
+
+  .col-l-7 {
     width: 58.33%;
+  }
+
+  .col-l-8 {
+    width: 66.66%;
+  }
+
+  .col-l-9 {
+    width: 75%;
+  }
+
+  .col-l-10 {
+    width: 83.33%;
+  }
+
+  .col-l-11 {
+    width: 91.66%;
+  }
+
+  .col-l-12 {
+    width: 100%;
   }
 
   [class*="col-"] {
