@@ -14,21 +14,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
-
+<script src="https://kit.fontawesome.com/01b7c8dea1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <header>
     <div class="container">
-      <a href="index.html" class="logo">Yoann Pisterman</a>
-      <nav class="navigation_bar">
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="logo">Yoann Pisterman</a>
+        <nav class="navigation_bar">
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -63,10 +66,10 @@
           <div class="column">
             <!-- column left  open -->
             <p>This app is a tool that helps to balance your saving goals by priorities can help managing your finance at a glance.</p>
-<div class="center">
+            <div class="center">
 
-            <a href="files/summitcasestudy.png" class="button button_case">Casestudylink</a>
-</div>
+              <a href="files/summitcasestudy.png" class="button button_case">Casestudylink</a>
+            </div>
           </div>
           <!-- column left close -->
           <div class="column ">
@@ -347,7 +350,8 @@
       </div>
     </div>
   </footer>
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 

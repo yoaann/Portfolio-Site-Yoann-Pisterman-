@@ -99,7 +99,6 @@ a {
   /* underlining */
 }
 
-/*#033D7C */
 a:visited {
   /* visited link */
   color: #000000;
@@ -159,7 +158,7 @@ a:active {
 /* Layout styling */
 header {
   background-color: #F5F5F5;
-  text-align: center;
+  /*text-align: center;*/
   border-bottom: 1px solid #C6C6C6;
   width: 100%;
   -webkit-box-shadow: 0px 2px 15px 0px rgba(50, 50, 55, 0.18);
@@ -184,17 +183,12 @@ a.logo:hover {
 nav ul {
   list-style-type: none;
   padding-left: 0;
+  margin: 0;
 }
 
 nav li {
-  display: inline-block;
   margin: 0 15px;
   padding-bottom: 3px;
-  border-bottom: 3px solid transparent;
-}
-
-nav li:hover {
-  border-bottom: 3px solid #000000;
 }
 
 nav a {
@@ -216,6 +210,29 @@ nav a:active {
   color: #1169EE;
 }
 
+.icon {
+  text-decoration: none;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li{
+  display:block;
+}
+
 .intro span {
   display: block;
 }
@@ -230,7 +247,7 @@ nav a:active {
 }
 
 main {
-  padding-top: 110px;
+  padding-top: 58px;
 }
 
 .section {
@@ -265,7 +282,7 @@ main {
   align-items: center;
   align-content: flex-start;
   max-width: 1200px;
-  padding: 0 2.125em;
+  padding: 0 2.85em;
 }
 
 .arrow_link a {
@@ -287,7 +304,7 @@ main {
   align-items: center;
   align-content: flex-start;
   max-width: 1200px;
-  padding: 0 2.125em;
+  padding: 0 2.85em;
   color: #000000
 }
 
@@ -579,16 +596,36 @@ footer .container {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  nav li {
+    border-bottom: 3px solid transparent;
+  }
+
+  nav li:hover {
+    border-bottom: 3px solid #000000;
   }
 
   .row::after {
