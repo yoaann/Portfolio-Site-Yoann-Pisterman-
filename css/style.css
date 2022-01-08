@@ -455,7 +455,6 @@ p {
 }
 
 .summit_bg_3 .summit_logo {
-  width: 50%;
   margin: 60px auto -220px;
 }
 
@@ -511,7 +510,7 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 85%;
 }
 
 .symbol {
@@ -594,6 +593,24 @@ color: #F76943;
   background-position: right;
 }
 
+.button.button_case_note {
+  background-color: transparent;
+  color: #1169EE !important;
+  border: 2px solid #1169EE;
+  padding: 4px 12px;
+  border-radius: 3px;
+  margin: 0 5em;
+  margin-top: 4em;
+  margin-bottom: 1.5em
+}
+
+.note_bg_2 {
+background-color: #FBFBFC;
+}
+
+.note_mockup2 {
+  padding: -3px 0;
+}
 /* ------------------------------------------------------*/
 
 
@@ -712,6 +729,27 @@ Medium devices (640px and larger)
     display: flex;
     justify-content: space-between;
   }
+  .summit_bg_3 .summit_logo {
+    width: 50%;
+    margin: 60px auto -220px;
+  }
+
+  .graph {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+  .button.button_case_note {
+    background-color: transparent;
+    color: #1169EE !important;
+    border: 2px solid #1169EE;
+    padding: 4px 12px;
+    border-radius: 3px;
+    margin-top: 7em;
+    margin-bottom: 1.5em
+  }
 
   .col-m-1 {
     width: 8.33%;
@@ -801,6 +839,9 @@ Large devices (1024px or larger)
     margin-top: 4px;
   }
 
+  main {
+    padding-top: 85px;
+}
   .row::after {
     content: "";
     clear: both;
@@ -812,10 +853,27 @@ Large devices (1024px or larger)
     justify-content: space-between;
   }
 
-  main {
-    padding-top: 85px;
+  .graph {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+.summit_bg_3 .summit_logo {
+  width: 50%;
+  margin: 60px auto -220px;
 }
 
+.button.button_case_note {
+  background-color: transparent;
+  color: #1169EE !important;
+  border: 2px solid #1169EE;
+  padding: 4px 12px;
+  border-radius: 3px;
+  margin-top: 7em;
+  margin-bottom: 1.5em
+}
   .col-l-1 {
     width: 8.33%;
   }
@@ -900,7 +958,26 @@ X-large devices (1440px or larger)
     display: flex;
     justify-content: space-between;
   }
+  .summit_bg_3 .summit_logo {
+    width: 50%;
+    margin: 60px auto -220px;
+  }
 
+  .graph {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  .button.button_case_note {
+    background-color: transparent;
+    color: #1169EE !important;
+    border: 2px solid #1169EE;
+    padding: 4px 12px;
+    border-radius: 3px;
+    margin-top: 7em;
+    margin-bottom: 1.5em
+  }
   .col-8 {
     width: 66.66%;
   }
