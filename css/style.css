@@ -254,11 +254,6 @@ main {
   padding: 12px 0;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-}
-
 #work {
   text-align: center;
   padding-bottom: 4px;
@@ -266,7 +261,7 @@ main {
 }
 
 #work .row {
-  margin: 25px 0;
+  margin: 12px 0;
   /* 25px top and bottom, 0 left and right */
   padding-bottom: 12px;
   /*border-bottom: 1px solid #DADADA;*/
@@ -287,6 +282,18 @@ main {
 
 .arrow_link a {
   text-decoration: none;
+}
+
+.arrow_link.navy a {
+    color: #023873;
+}
+
+.go_to.navy a{
+color: #023873;
+}
+
+.project_summit.navy {
+  color: #023873;
 }
 
 .go_to {
@@ -408,34 +415,90 @@ p {
   background-color: #ECECF0;
 }
 
-/* summit page*/
+/* ---------------------SUMMIT PAGE---------------------*/
+/* ------------------------------------------------------*/
+/* ------------------------------------------------------*/
+
 .summit_bg {
+  background-image: url("../img/summit/summit_cover_mockup_BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.summit_bg_1 {
   background-image: url("../img/summit/BGmockup@1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
 }
 
-.summit_font_logo {
-  display: flex;
-  width: 40%;
-  margin: 0em 12em;
-  padding: 0 15px;
-}
-
-.blue {
+.summit_bg_2 {
   background-color: #19528B;
   padding: 25px 0;
   margin-top: -2px;
 }
 
-.blue h3 {
+.summit_bg_2 h3 {
   color: #FFFFFF;
 }
 
-.blue p {
+.summit_bg_2 p {
   color: #FFFFFF;
 }
+
+.summit_bg_3 {
+  background-image: url("../img/summit/summitbrandingBG@1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.summit_bg_3 .summit_logo {
+  width: 50%;
+  margin: 60px auto -220px;
+}
+
+.summit_bg_4 {
+  background-image: url("../img/summit/Create_goal_mockup BG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.summit_bg_5 {
+  background-image: url("../img/summit/saving_plan_mockup BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.summit_bg_6 {
+  background-image: url("../img/summit/summitmockup4@1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.darkblue {
+  background-color: #1261D8;
+  padding: 25px 0;
+  background-position: center;
+}
+
+.summit_bg_8 {
+  background-image: url("../img/summit/summit_mockup_mint BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  }
+
+/*.summit_font_logo {
+  display: flex;
+  width: 40%;
+  margin: 0em 12em;
+  padding: 0 15px;
+}*/
 
 .summit_icon {
   justify-content: center;
@@ -455,18 +518,6 @@ p {
   width: 19em;
 }
 
-.summit_bg_2 {
-  background-image: url("../img/summit/summitbrandingBG@1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.summit_bg_2 .summit_logo {
-  width: 50%;
-  margin: 60px auto -220px;
-}
-
 .user_flow {
   display: block;
   margin-left: auto;
@@ -481,10 +532,16 @@ p {
   margin: 12px 0;
 }
 
-.darkblue {
-  background-color: #1261D8;
-  padding: 25px 0;
-  background-position: center;
+.column_paragraph.green {
+color: #31B055;
+}
+
+.column_paragraph.blue {
+color: #1169EE;
+}
+
+.column_paragraph.orange {
+color: #F76943;
 }
 
 /* about page*/
@@ -527,6 +584,19 @@ p {
 .skills-tools {
   flex-direction: column;
 }
+
+/* ---------------------NOTEPAGE---------------------*/
+/* ------------------------------------------------------*/
+.note_bg {
+  background-image: url("../img/note/note_mockup1 BG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+/* ------------------------------------------------------*/
+
+
 
 footer {
   background-color: #F5F5F5;
@@ -634,6 +704,15 @@ Medium devices (640px and larger)
     display: table;
   }
 
+  main {
+    padding-top: 85px;
+}
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .col-m-1 {
     width: 8.33%;
   }
@@ -728,6 +807,15 @@ Large devices (1024px or larger)
     display: table;
   }
 
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main {
+    padding-top: 85px;
+}
+
   .col-l-1 {
     width: 8.33%;
   }
@@ -806,6 +894,11 @@ X-large devices (1440px or larger)
     content: "";
     clear: both;
     display: table;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
   }
 
   .col-8 {
