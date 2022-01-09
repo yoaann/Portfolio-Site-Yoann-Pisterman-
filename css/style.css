@@ -261,7 +261,7 @@ main {
 }
 
 #work .row {
-  margin: 12px 0;
+  /* margin: 12px 0;*/
   /* 25px top and bottom, 0 left and right */
   padding-bottom: 12px;
   /*border-bottom: 1px solid #DADADA;*/
@@ -277,7 +277,8 @@ main {
   align-items: center;
   align-content: flex-start;
   max-width: 1200px;
-  padding: 0 2.85em;
+  padding: 0 1.85em;
+  padding-top: 1.5em;
 }
 
 .arrow_link a {
@@ -413,11 +414,17 @@ p {
 .summit {
   background-color: #C0D8F0;
 }
-
 .note_bg {
   background-color: #ECECF0;
 }
 
+.go_to svg path {
+fill: #023873;
+}
+
+.go_to svg {
+max-width: 2.8em;
+}
 /* ---------------------SUMMIT PAGE---------------------*/
 /* ------------------------------------------------------*/
 /* ------------------------------------------------------*/
@@ -548,22 +555,11 @@ color: #F76943;
 
 /* ---------------------NOTEPAGE---------------------*/
 /* ------------------------------------------------------*/
-.note_bg {
+.note_bg1 {
   background-image: url("../img/note/note_mockup1 BG.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-}
-
-.button.button_case_note {
-  background-color: transparent;
-  color: #1169EE !important;
-  border: 2px solid #1169EE;
-  padding: 4px 12px;
-  border-radius: 3px;
-  margin: 0 5em;
-  margin-top: 4em;
-  margin-bottom: 1.5em
 }
 
 .note_bg_2 {
@@ -748,16 +744,6 @@ Medium devices (640px and larger)
     width: 40%;
   }
 
-  .button.button_case_note {
-    background-color: transparent;
-    color: #1169EE !important;
-    border: 2px solid #1169EE;
-    padding: 4px 12px;
-    border-radius: 3px;
-    margin-top: 7em;
-    margin-bottom: 1.5em
-  }
-
   .col-m-1 {
     width: 8.33%;
   }
@@ -872,15 +858,7 @@ Large devices (1024px or larger)
   margin: 60px auto -220px;
 }
 
-.button.button_case_note {
-  background-color: transparent;
-  color: #1169EE !important;
-  border: 2px solid #1169EE;
-  padding: 4px 12px;
-  border-radius: 3px;
-  margin-top: 7em;
-  margin-bottom: 1.5em
-}
+
   .col-l-1 {
     width: 8.33%;
   }
@@ -976,15 +954,7 @@ X-large devices (1440px or larger)
     margin-right: auto;
     width: 40%;
   }
-  .button.button_case_note {
-    background-color: transparent;
-    color: #1169EE !important;
-    border: 2px solid #1169EE;
-    padding: 4px 12px;
-    border-radius: 3px;
-    margin-top: 7em;
-    margin-bottom: 1.5em
-  }
+  
   .col-8 {
     width: 66.66%;
   }
