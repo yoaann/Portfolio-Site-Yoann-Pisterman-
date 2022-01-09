@@ -406,7 +406,10 @@ p {
   padding: 0 12px;
 }
 
-/* about page*/
+/* ---------------------Index PAGE---------------------*/
+/* ------------------------------------------------------*/
+/* ------------------------------------------------------*/
+
 .summit {
   background-color: #C0D8F0;
 }
@@ -543,7 +546,38 @@ color: #1169EE;
 color: #F76943;
 }
 
-/* about page*/
+/* ---------------------NOTEPAGE---------------------*/
+/* ------------------------------------------------------*/
+.note_bg {
+  background-image: url("../img/note/note_mockup1 BG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.button.button_case_note {
+  background-color: transparent;
+  color: #1169EE !important;
+  border: 2px solid #1169EE;
+  padding: 4px 12px;
+  border-radius: 3px;
+  margin: 0 5em;
+  margin-top: 4em;
+  margin-bottom: 1.5em
+}
+
+.note_bg_2 {
+background-color: #FBFBFC;
+}
+
+.note_mockup2 {
+  padding: 0px 0;
+}
+
+/*------------------------ about page-----------------------*/
+/*----------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
 .about h1 {
   width: 100%;
   margin: 1em auto;
@@ -584,33 +618,6 @@ color: #F76943;
   flex-direction: column;
 }
 
-/* ---------------------NOTEPAGE---------------------*/
-/* ------------------------------------------------------*/
-.note_bg {
-  background-image: url("../img/note/note_mockup1 BG.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-}
-
-.button.button_case_note {
-  background-color: transparent;
-  color: #1169EE !important;
-  border: 2px solid #1169EE;
-  padding: 4px 12px;
-  border-radius: 3px;
-  margin: 0 5em;
-  margin-top: 4em;
-  margin-bottom: 1.5em
-}
-
-.note_bg_2 {
-background-color: #FBFBFC;
-}
-
-.note_mockup2 {
-  padding: -3px 0;
-}
 /* ------------------------------------------------------*/
 
 
