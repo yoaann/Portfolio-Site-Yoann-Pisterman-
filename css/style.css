@@ -54,7 +54,7 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #C6C6C6;
+  color: #979797;
 }
 
 h1, h2, h3, h4 {
@@ -428,7 +428,9 @@ max-width: 2.8em;
 /* ---------------------SUMMIT PAGE---------------------*/
 /* ------------------------------------------------------*/
 /* ------------------------------------------------------*/
-
+.summit_bg_0{
+    background-color: #F5F5F5;
+}
 .summit_bg {
   background-image: url("../img/summit/summit_cover_mockup_BG.png");
   background-repeat: no-repeat;
@@ -445,7 +447,7 @@ max-width: 2.8em;
 
 .summit_bg_2 {
   background-color: #19528B;
-  padding: 25px 0;
+  padding: 1px 0;
   margin-top: -2px;
 }
 
@@ -954,7 +956,7 @@ X-large devices (1440px or larger)
     margin-right: auto;
     width: 40%;
   }
-  
+
   .col-8 {
     width: 66.66%;
   }
