@@ -289,12 +289,10 @@ main {
   align-items: center;
   align-content: flex-start;
   max-width: 1200px;
-  padding: 0 1.85em;
-  padding-top: 1.5em;
+  padding: 1.5em 1.85em 0;
 }
 
 .arrow_link a {
-  background-color: transparent;
   text-decoration: none;
 }
 
@@ -309,15 +307,15 @@ color: #023873;
 }
 
 .project_summit.navy {
+  background-color: transparent;
   color: #023873;
 }
 
 .go_to {
   display: inline-flex;
-  padding-top: 0.5em;
+  padding: 8px 0 3px;
   height: 2.5em;
   margin: 0 15px;
-  padding-bottom: 3px;
   border-bottom: 3px solid transparent;
 }
 
@@ -332,17 +330,19 @@ color: #023873;
 }
 
 .project_summit {
+  background-color: transparent;
+  color: #000000;
   padding-left: 3em;
   text-align: left;
   max-width: 342px;
-  color: #000000;
 }
 
 .project_note {
+  background-color: transparent;
+  color: #000000;
   padding-left: 3em;
   text-align: left;
   max-width: 342px;
-  color: #000000;
 }
 
 /*.project_animation {
