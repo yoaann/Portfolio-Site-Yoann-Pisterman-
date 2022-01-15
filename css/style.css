@@ -165,7 +165,7 @@ background-color: transparent;
 
 /* Layout styling */
 header {
-  background: #F5F5F5;
+  background-color: #F5F5F5;
   /*text-align: center;*/
   border-bottom: 1px solid #C6C6C6;
   width: 100%;
