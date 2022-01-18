@@ -113,7 +113,7 @@ a:visited {
 a:hover, a:focus {
   /* Underlining when hovering over a link */
   background-color: transparent;
-  color: #205C98;
+  color: #949494;
 }
 
 a:active {
@@ -130,7 +130,7 @@ background-color: transparent;
   /* color stays white // needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 0px;
   border-bottom: 0px solid #FFFFFF;
   border: 2px solid #1169EE;
   /* width of the border, type, color */
