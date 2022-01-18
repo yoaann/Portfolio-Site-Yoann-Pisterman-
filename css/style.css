@@ -387,6 +387,7 @@ color: #023873;
 }
 
 .social_icons ul {
+  display: flex;
   list-style-type: none;
   padding-left: 0;
 }
@@ -751,7 +752,7 @@ Medium devices (640px and larger)
   .flex {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 45px;
+    /*padding-bottom: 45px;*/
   }
   .summit_bg_3 .summit_logo {
     width: 50%;
