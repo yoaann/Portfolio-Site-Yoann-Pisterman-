@@ -113,7 +113,7 @@ a:visited {
 a:hover, a:focus {
   /* Underlining when hovering over a link */
   background-color: transparent;
-  color: #1169EE;
+  color: #205C98;
 }
 
 a:active {
@@ -125,13 +125,14 @@ background-color: transparent;
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #000000;
-  color: #FFFFFF !important;
+  background-color: #FFFFFF;
+  color: #1169EE !important;
   /* color stays white // needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 10px;
   border-bottom: 0px solid #FFFFFF;
+  border: 2px solid #1169EE;
   /* width of the border, type, color */
   text-decoration: none;
   transition-duration: 0.2s;
@@ -352,7 +353,7 @@ color: #023873;
   color: #000000;*/
 }
 
-.button.button_case {
+a.button.button_case{
   background-color: transparent;
   color: #1169EE !important;
   border: 2px solid #1169EE;
