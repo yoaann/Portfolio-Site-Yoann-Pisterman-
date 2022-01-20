@@ -63,7 +63,7 @@ h1, h2, h3, h4 {
 
 h1, .h1 {
   background-color: transparent;
-  color: #8C8C8C;
+  color: #949494;
   font-size: 1.5em;
   /*  36px */
   font-weight: 700;
@@ -72,7 +72,7 @@ h1, .h1 {
 
 h2 {
   background-color: transparent;
-  color: #8C8C8C;
+  color: #949494;
   font-size: 1.125em;
   /*  24px */
   font-weight: 700;
@@ -80,7 +80,7 @@ h2 {
 
 h3 {
   background-color: transparent;
-  color: #8C8C8C;
+  color: #949494;
   font-size: 1.125em;
   /*  24px */
   font-weight: 700;
@@ -88,7 +88,7 @@ h3 {
 
 h4 {
   background-color: transparent;
-  color: #8C8C8C;
+  color: #949494;
   font-size: 1em;
   /*  16px */
   font-weight: 600;
@@ -320,7 +320,7 @@ color: #023873;
   border-bottom: 3px solid transparent;
 }
 
-.animation {
+/*.animation {
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -328,7 +328,7 @@ color: #023873;
   max-width: 1200px;
   padding: 0 2.85em;
   color: #000000
-}
+}*/
 
 .project_summit {
   background-color: transparent;
