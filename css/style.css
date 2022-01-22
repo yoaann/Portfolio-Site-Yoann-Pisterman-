@@ -1,46 +1,4 @@
-/*
-Colors used:
 
-Button//
-Primary color :#000000 black
-Secondary color :#C6C6C6 lightgrey
-Hover : #C6C6C6
-visited : #8C8C8C
-
-About page //
-Text >
-Header : light grey #C6C6C6;
-Subtitle, Body text,Caption : grey #8C8C8C;
-CTA :#C6C6C6;
-
-Styling :
-Header frame BG: beige #3B3734
-BG: gradiant #302A27 & #000000;
-
-Index page //
-
-Navigation section >
-Active #000000 ;
-Inactive #C6C6C6
-BG : #FFFFFF
-
-Body >
-header white #000000
-Subtilte : grey #8C8C8C
-Body text : light grey #C6C6C6
-Background: lighter grey #F5F5F5
-
-Footer section >
-CTA: black #000000 ;
-Subtitle: light gray #C6C6C6
-BG : white #FFFFFF
-
-Summit container >
-Text : dark blue #032870 ;
-Button : blue #1169EE;
-
-Userflow container  Text : green #1E6E35 ; red #F76943; Blue #1169EE
-*/
 * {
   box-sizing: border-box;
 }
@@ -290,7 +248,7 @@ main {
   align-items: center;
   align-content: flex-start;
   max-width: 1200px;
-  padding: 1.5em 1.85em 0;
+  padding: 1.5em 0.85em 0;
 }
 
 .arrow_link a {
